@@ -1,1 +1,1 @@
-# johny-python-app
+# clovis-class-apps

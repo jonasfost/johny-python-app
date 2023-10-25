@@ -13,10 +13,10 @@ name: "CodeQL"
 
 on:
   push:
-    #branches: [ "main" ]
+    branches: [ "main" ]
   pull_request:
     # The branches below must be a subset of the branches above
-    #branches: [ "DEVOPS-249-Johny-Docker-CI/CD-Week24-Assignenment" ]
+    branches: [ "DEVOPS-249-Johny-Docker-CI/CD-Week24-Assignenment" ]
   schedule:
     - cron: '59 23 * * 5' # At 23:59 on Friday.
 

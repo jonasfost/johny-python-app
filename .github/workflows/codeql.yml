@@ -13,12 +13,12 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "DEVOPS-249-Johny-Docker-CI/CD-Week24-Assignenment" ]
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "DEVOPS-249-Johny-Docker-CI/CD-Week24-Assignenment" ]
   schedule:
-    - cron: '42 23 * * 0'
+    - cron: '59 23 * * 5' # At 23:59 on Friday.
 
 jobs:
   analyze:
@@ -38,7 +38,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
+        language: ['javascript-typescript']
         # CodeQL supports [ 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift' ]
         # Use only 'java-kotlin' to analyze code written in Java, Kotlin or both
         # Use only 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
